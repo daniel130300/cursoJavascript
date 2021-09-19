@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo DOM con JS</title>
+</head>
+
+<body>
+    <h1 id="titulo">Manejo DOM con JS</h1>
+    <br/>   
+    <label for="txtNombre">Nombre:</label>
+    <input type="text" id="txtNombre" name="txtNombre" onchange="convertir(this)">
+   
+    <script>
+        
+        const convertir = (nombreInput) => {
+            nombreInput.value = nombreInput.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

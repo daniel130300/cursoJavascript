@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM con JS</title>
+</head>
+<body>
+
+    <h1 id="cabecero">Ejemplo DOM con JS</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Repellendus reiciendis expedita, suscipit eveniet reprehenderit voluptas 
+        quam eligendi at itaque non, iste culpa nesciunt eaque, quos possimus iusto 
+        facere sed blanditiis?</p>
+    <p>Otro texto</p>
+    
+    <script>
+        let parrafos = document.getElementsByTagName("p");
+
+        for(const parrafo of parrafos)
+        {
+            console.log(parrafo.innerHTML);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM con JS</title>
+</head>
+<body>
+
+    <h1 id="cabecero">Ejemplo DOM con JS</h1>
+    <p id="parrafo1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Repellendus reiciendis expedita, suscipit eveniet reprehenderit voluptas 
+        quam eligendi at itaque non, iste culpa nesciunt eaque, quos possimus iusto 
+        facere sed blanditiis?</p>
+
+    <p id="parrafo2">Otro texto</p>
+    
+    <script>
+        let cabecero = document.getElementById("cabecero");
+        let parrafo = document.getElementById("parrafo");
+
+        console.log(`Valor cabecero: ${cabecero.innerHTML}`);
+        console.log(`Valor parrafo: ${parrafo.innerHTML}`);
+        console.log("Saludos desde JS");
+        
+        parrafo.innerHTML = "Saludos mi pana";
+    </script>
+    
+</body>
+</html>

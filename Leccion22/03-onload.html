@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo DOM con JS</title>
+</head>
+
+<!--Esta función se utiliza cuando carga nuestro sitio web-->
+
+<body onload="entrar()">
+    <h1 id="titulo">Manejo DOM con JS</h1>
+    <br/>
+
+    <div id="mostrar"></div>
+    <script>
+        function entrar()
+        {
+            window.alert("Entrando a la pagina web");
+            let texto = "";
+
+            if(navigator.cookieEnabled)
+            {
+                texto = "Cookies están habilitadas";
+            }
+            else
+            {
+                texto = "Cookies inhabilitadas";
+            }
+
+            document.getElementById("mostrar").innerHTML= texto;
+        }
+    </script>
+</body>
+</html>

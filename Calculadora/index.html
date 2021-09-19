@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="./script.js"></script>
+</head>
+<body>
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card w-75 text-center">
+      <div class="card-header text-center">Mi Calculadora</div>
+      <div class="card-body">
+        <div class="row mb-3 mx-1">
+          <input type="text" id="userInput" name="userInput" class="form-control" readonly>
+        </div>
+
+        <div class="row mb-2 mt-2">
+          <div class="col">
+            <button type="button" id="btn1" name="btn1" value="1" class="btn btn-primary btn-lg w-100">1</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btn2" name="btn2" value="2" class="btn btn-primary btn-lg w-100">2</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btn3" name="btn3" value="3" class="btn btn-primary btn-lg w-100">3</button>
+          </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+          <div class="col">
+            <button type="button" id="btn4" name="btn4" value="4" class="btn btn-primary btn-lg w-100">4</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btn5" name="btn5" value="5" class="btn btn-primary btn-lg w-100">5</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btn6" name="btn6" value="6" class="btn btn-primary btn-lg w-100">6</button>
+          </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+          <div class="col">
+            <button type="button" id="btn7" name="btn7" value="7" class="btn btn-primary btn-lg w-100">7</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btn8" name="btn8" value="8" class="btn btn-primary btn-lg w-100">8</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btn9" name="btn9" value="9" class="btn btn-primary btn-lg w-100">9</button>
+          </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+          <div class="col">
+            <button type="button" id="btn0" name="btn0" value="0" class="btn btn-primary btn-lg w-100">0</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btnMas" name="btnMas" value="+" class="btn btn-success btn-lg w-100">+</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btnMenos" name="btnMenos" value="-" class="btn btn-success btn-lg w-100">-</button>
+          </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+          <div class="col">
+            <button type="button" id="btnDividir" name="btnDividir" value="/" class="btn btn-success btn-lg w-100">/</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btnMultiplicar" name="btnMultiplicar" value="*" class="btn btn-success btn-lg w-100">*</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btnResolver" name="btnResolver" value="=" class="btn btn-dark btn-lg w-100">=</button>
+          </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+          <div class="col">
+            <button type="button" id="btnDel" name="btnDel" class="btn btn btn-warning btn-lg w-100">DEL</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btnAc" name="btnAc" class="btn btn-danger btn-lg w-100">AC</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

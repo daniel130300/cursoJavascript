@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo DOM con JS</title>
+</head>
+
+<body>
+    <h1 id="titulo" onmouseover="cambiarColorOver(this)" onmouseout="cambiarColorOut(this)">Manejo DOM con JS</h1>
+
+    <script>
+        
+        const cambiarColorOver = (titulo) => {
+            titulo.style.color = "red";
+        }
+
+        const cambiarColorOut= (titulo) => {
+            titulo.style.color = "blue";
+        }
+    </script>
+</body>
+</html>
